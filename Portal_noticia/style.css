@@ -1,10 +1,18 @@
-h1{
-    color:blueviolet
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2{
-    color: aqua;
+header li {
+    display: inline;
 }
-.creation-date{
-    color: crimson
+
+.container{
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles {
+    display: flex;
 }
