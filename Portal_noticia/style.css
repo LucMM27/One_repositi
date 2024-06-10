@@ -16,11 +16,18 @@ header .container{
 }
 
 header li {
-    display: inline;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 header li a{
     color: #f5f6fa;
+    text-decoration: none;
+}
+
+header li a:hover{
+    text-decoration: underline;
 }
 
 .container{
@@ -34,7 +41,8 @@ header li a{
     justify-content: space-between;
 }
 .articles article img{
-    height: 180px;
+    /* height: 180px; */
+    width: 100%;
 }
 
 .articles article{
@@ -56,12 +64,51 @@ section h2,
 
 .articles article h3{
     margin: 16px 0;
+    font-size: 24px;
 }
 
 .articles article a{
-    background-color: rgb(0, 242, 255);;
+    background-color:  rgba(84, 90, 251, 0.7);;
     text-decoration: none;
     padding: 6px;
-    color: rgb(53, 158, 104);
+    color: rgb(16, 202, 235);
     display: inline-block;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+#sport .articles article a:hover,
+#economy .articles article a:hover
+{
+    text-decoration: underline;
+    background-color: rgb(43, 0, 255);
+}
+
+.articles article a, 
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sport{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#economy{
+    background-color: rgb(255, 243, 176);
+}
+
+#Games{
+    background-color: rgb(129, 170, 246, 0.5) ;
+}
+
+#Movies{
+    background-color: rgb(5, 141, 141, 0.5);
+}
+
+#sport .articles article a{
+    background-color:  rgba(84, 90, 251, 0.7);
+}
+
+#economy .articles article a{
+    background-color:  rgba(84, 90, 251, 0.7) ;
 }
